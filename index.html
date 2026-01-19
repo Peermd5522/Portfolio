@@ -1,69 +1,165 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Peer Mohammed A | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Peer Mohammad A - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
-  <!-- Navigation Menu -->
-  <nav>
-      <div class="navbar">
-        <div class="logo"><a href="#">Portfolio.</a></div>
-        <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+<!-- Scroll Button -->
+<div class="scroll-button">
+  <a href="#home"><i class="fas fa-arrow-up"></i></a>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <div class="navbar">
+    <div class="logo"><a href="#">Portfolio.</a></div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <div class="cancel-btn"><i class="fas fa-times"></i></div>
+    </ul>
+    <div class="media-icons">
+      <a href="https://www.linkedin.com/in/peermohammed5522-219105318/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Peermd5522"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+  <div class="menu-btn"><i class="fas fa-bars"></i></div>
+</nav>
+
+<!-- Home -->
+<section class="home" id="home">
+  <div class="home-content">
+    <div class="text">
+      <div class="text-one">Hello,</div>
+      <div class="text-two">I'm Peer Mohammed A</div>
+      <div class="text-three">Software Developer</div>
+      <div class="text-four">From Tenkasi , India</div>
+    </div>
+    <div class="button">
+      <button>Hire Me</button>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="content">
+    <div class="title"><span>About Me</span></div>
+
+    <div class="about-details">
+      <div class="right full">
+        <div class="topic">Software Development Is My Focus</div>
+        <p>
+          Motivated Computer Science graduate with strong fundamentals in Java,
+          Object-Oriented Programming, JDBC, and SQL. Hands-on experience building
+          console-based and web applications with database integration.
+          Skilled in implementing CRUD operations, working with REST APIs,
+          and writing clean, maintainable code. Seeking an entry-level
+          Software Developer role to grow as a backend developer.
+        </p>
+        <div class="button">
+          <button>Download CV</button>
         </div>
       </div>
-  </nav>
+    </div>
+  </div>
+</section>
 
-  <!-- Home Section -->
-   <section class="Home" id="Home">
-    <div class="Home-Content">
+<!-- Skills -->
+<section class="skills" id="skills">
+  <div class="content">
+    <div class="title"><span>My Skills</span></div>
+    <div class="skills-details">
+
       <div class="text">
-        <div class="text-one">Hey!</div>
-        <div class="text-two">I'm Peer Mohammed</div>
-        <div class="text-three">Frontend Developer</div>
-        <div class="text-four">From Chennai</div>
-      </div>
-    </div>
-   </section>
-
-   <!-- About Section -->
-
-   <section class="About" id="About">
-    <div class="Content">
-      <div class="Title"><span>About Me</span></div>
-      <div class="About-Details">
-        <div class="right"></div>
-        <div class="left">
-          <div class="topic">Designing is my Passion</div>
-          <p>
-          Engineering student with a passion for building beautiful and user‑friendly web applications. <br>
-          Capable of working hard and smart with full dedication and determination to achieve both personal and organizational goals. <br>
-          Able to collaborate efficiently in teams, constantly learning and adapting to new technologies to deliver high‑impact solutions. <br>
-          Skilled at analyzing complex challenges and breaking them down into actionable steps to drive innovation. <br>
-          Proficient in modern development tools—HTML, CSS, JavaScript and Git—ensuring code that is clean, maintainable, and scalable. <br>
-          Dedicated to managing time and multitasking across projects, balancing coursework, side‑projects, and team efforts effectively. <br>
-          Guided by ethical reasoning and sustainability awareness, committed to creating web experiences that positively impact users and communities.
-          </p>
+        <div class="topic">Skills Reflect My Knowledge</div>
+        <p>
+          Good foundation in backend development, databases, and web technologies.
+          Experience in Java-based applications and modern web development tools.
+        </p>
+        <div class="experience">
+          <div class="num">0</div>
+          <div class="exp">Year<br>Experience</div>
         </div>
       </div>
+
+      <div class="boxes">
+        <div class="box"><div class="topic">Java</div><div class="per">70%</div></div>
+        <div class="box"><div class="topic">SQL</div><div class="per">80%</div></div>
+        <div class="box"><div class="topic">JavaScript</div><div class="per">70%</div></div>
+        <div class="box"><div class="topic">React.js</div><div class="per">60%</div></div>
+      </div>
+
     </div>
-   </section>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="content">
+    <div class="title"><span>My Services</span></div>
+
+    <div class="boxes">
+      <div class="box">
+        <div class="icon"><i class="fas fa-server"></i></div>
+        <div class="topic">Java Backend Development</div>
+        <p>Secure and scalable backend systems using Java, JDBC, and SQL.</p>
+      </div>
+
+      <div class="box">
+        <div class="icon"><i class="fas fa-code"></i></div>
+        <div class="topic">Web Development</div>
+        <p>Responsive websites using HTML, CSS, JavaScript, and React.</p>
+      </div>
+
+      <div class="box">
+        <div class="icon"><i class="fas fa-database"></i></div>
+        <div class="topic">Database Management</div>
+        <p>MySQL database design, queries, and optimization.</p>
+      </div>
+
+      <div class="box">
+        <div class="icon"><i class="fas fa-link"></i></div>
+        <div class="topic">REST API Development</div>
+        <p>Designing RESTful APIs using Node.js and backend concepts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Contact Me</span></div>
+    <div class="text">
+      <div class="topic">Have an Opportunity?</div>
+      <p>
+        Interested in backend or web development roles.
+        Let’s connect and build impactful software solutions together.
+      </p>
+      <div class="button">
+        <button>Let's Connect</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="text">
+    <span>Created By <a href="#">Peer Mohammed A</a> | © 2025</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
