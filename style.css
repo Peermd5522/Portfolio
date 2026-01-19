@@ -1,0 +1,269 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+
+/* Scrollbar */
+::-webkit-scrollbar{ width:10px; }
+::-webkit-scrollbar-track{ background:#f1f1f1; }
+::-webkit-scrollbar-thumb{
+  background:#6e93f7;
+  border-radius:12px;
+}
+::-webkit-scrollbar-thumb:hover{ background:#4070f4; }
+
+/* Navbar */
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: .3s;
+  font-family: 'Ubuntu', sans-serif;
+}
+nav.sticky{
+  background:#4070f4;
+  padding:13px 0;
+}
+.navbar{
+  width:90%;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo a{
+  font-size:35px;
+  font-weight:500;
+  color:#4070f4;
+}
+nav.sticky .logo a{ color:#fff; }
+
+.menu{
+  display:flex;
+}
+.menu li{
+  list-style:none;
+  margin:0 10px;
+}
+.menu a{
+  color:#0E2431;
+  font-size:18px;
+  font-weight:500;
+}
+.menu a:hover{ color:#4070f4; }
+nav.sticky .menu a{ color:#fff; }
+nav.sticky .menu a:hover{ color:#0E2431; }
+
+.media-icons a{
+  color:#4070f4;
+  margin:0 6px;
+}
+nav.sticky .media-icons a{ color:#fff; }
+
+/* Menu buttons */
+.menu-btn,.cancel-btn{
+  display:none;
+  font-size:20px;
+  cursor:pointer;
+}
+
+/* Home */
+.home{
+  height:100vh;
+  background:url("me.png") no-repeat;
+  background-position:right center;
+  background-size:contain;
+  background-attachment:fixed;
+  font-family:'Ubuntu',sans-serif;
+}
+.home-content{
+  width:90%;
+  height:100%;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.text-one{ font-size:25px; color:#0E2431; }
+.text-two{ font-size:75px; font-weight:600; }
+.text-three{ font-size:40px; color:#4070f4; }
+.text-four{ font-size:23px; }
+
+.button button{
+  margin-top:15px;
+  padding:10px 20px;
+  font-size:22px;
+  border-radius:6px;
+  background:#4070f4;
+  color:#fff;
+  border:2px solid transparent;
+  cursor:pointer;
+  transition:.3s;
+}
+.button button:hover{
+  background:#fff;
+  color:#4070f4;
+  border-color:#4070f4;
+}
+
+/* Sections */
+section{ padding-top:40px; }
+.content{
+  width:80%;
+  margin:40px auto;
+  font-family:'Poppins',sans-serif;
+}
+.title{
+  text-align:center;
+  margin-bottom:40px;
+}
+.title span{
+  font-size:30px;
+  font-weight:600;
+  position:relative;
+}
+.title span::after{
+  content:'';
+  width:70%;
+  height:3px;
+  background:#4070f4;
+  position:absolute;
+  left:50%;
+  bottom:-10px;
+  transform:translateX(-50%);
+}
+
+/* About */
+.about-details{
+  display:flex;
+  justify-content:center;
+}
+.about-details .right.full{
+  text-align:center;
+  width:100%;
+}
+.about-details .right.full p{
+  max-width:800px;
+  margin:0 auto;
+  text-align:center;
+}
+
+/* Skills */
+.skills{ background:#F0F8FF; }
+.skills-details{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.skills-details .text{ width:45%; }
+.skills-details .boxes{
+  width:45%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.skills-details .box{
+  width:48%;
+  margin:15px 0;
+}
+.skills-details .box .topic{ font-size:20px; color:#4070f4; }
+.skills-details .box .per{ font-size:55px; color:#4070f4; }
+
+/* Services */
+.services .boxes{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.services .box{
+  width:48%;
+  margin:20px 0;
+  padding:30px;
+  text-align:center;
+  border-radius:12px;
+  box-shadow:0 5px 10px rgba(0,0,0,.1);
+  transition:.3s;
+}
+.services .box:hover{
+  background:#4070f4;
+  color:#fff;
+}
+.services .icon{
+  width:50px;
+  height:50px;
+  background:#4070f4;
+  color:#fff;
+  border-radius:50%;
+  line-height:50px;
+  margin:auto;
+}
+.services .box:hover .icon{
+  background:#fff;
+  color:#4070f4;
+}
+
+/* Contact */
+.contact{
+  background:#F0F8FF;
+  text-align:center;
+}
+
+/* Footer */
+footer{
+  background:#4070f4;
+  padding:15px;
+  text-align:center;
+  color:#fff;
+}
+
+/* Scroll Button */
+.scroll-button a{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#4070f4;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:6px;
+  display:none;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .text-two{ font-size:55px; }
+  .skills-details .text,
+  .skills-details .boxes{
+    width:100%;
+  }
+  .services .box{
+    width:100%;
+  }
+}
+
+@media(max-width:750px){
+  .menu{
+    position:fixed;
+    left:-100%;
+    top:0;
+    background:#0E2431;
+    height:100vh;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+    padding-top:60px;
+    transition:.5s;
+  }
+  .navbar.active .menu{ left:0; }
+  .menu a{ color:#fff; font-size:22px; margin:10px 0; }
+  .menu-btn,.cancel-btn{ display:block; }
+}
+
