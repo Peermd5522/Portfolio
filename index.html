@@ -1,165 +1,906 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Peer Mohammed A | Portfolio</title>
+
+  <title>Peer Mohammed A — Software Developer</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Peer Mohammed A, a Java & backend-focused software developer from Tenkasi, India."
+  />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
+
 <body>
 
-<!-- Scroll Button -->
-<div class="scroll-button">
-  <a href="#home"><i class="fas fa-arrow-up"></i></a>
-</div>
+  <!-- Theme Toggle -->
+  <button
+    class="theme-toggle"
+    id="themeToggle"
+    aria-label="Switch to dark mode"
+    title="Switch theme"
+  >
+    <i class="fa-solid fa-moon" id="themeIcon"></i>
+  </button>
 
-<!-- Navigation -->
-<nav>
-  <div class="navbar">
-    <div class="logo"><a href="#">Portfolio.</a></div>
-    <ul class="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <div class="cancel-btn"><i class="fas fa-times"></i></div>
-    </ul>
-    <div class="media-icons">
-      <a href="https://www.linkedin.com/in/peermohammed5522-219105318/"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Peermd5522"><i class="fab fa-github"></i></a>
-    </div>
-  </div>
-  <div class="menu-btn"><i class="fas fa-bars"></i></div>
-</nav>
 
-<!-- Home -->
-<section class="home" id="home">
-  <div class="home-content">
-    <div class="text">
-      <div class="text-one">Hello,</div>
-      <div class="text-two">I'm Peer Mohammed A</div>
-      <div class="text-three">Software Developer</div>
-      <div class="text-four">From Tenkasi , India</div>
-    </div>
-    <div class="button">
-      <button>Hire Me</button>
-    </div>
-  </div>
-</section>
+  <!-- Navigation -->
+  <nav id="top">
 
-<!-- About -->
-<section class="about" id="about">
-  <div class="content">
-    <div class="title"><span>About Me</span></div>
+    <div class="navbar">
 
-    <div class="about-details">
-      <div class="right full">
-        <div class="topic">Software Development Is My Focus</div>
-        <p>
-          Motivated Computer Science graduate with strong fundamentals in Java,
-          Object-Oriented Programming, JDBC, and SQL. Hands-on experience building
-          console-based and web applications with database integration.
-          Skilled in implementing CRUD operations, working with REST APIs,
-          and writing clean, maintainable code. Seeking an entry-level
-          Software Developer role to grow as a backend developer.
-        </p>
-        <div class="button">
-          <button>Download CV</button>
+      <!-- Profile -->
+      <a
+        class="profile-button"
+        href="#about"
+        aria-label="About Peer Mohammed A"
+        title="About me"
+      >
+        <i class="fa-solid fa-user"></i>
+      </a>
+
+
+      <!-- Navigation Links -->
+      <ul class="menu" id="menu">
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+        <div class="cancel-btn" id="cancelBtn">
+          <i class="fa-solid fa-xmark"></i>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Skills -->
-<section class="skills" id="skills">
-  <div class="content">
-    <div class="title"><span>My Skills</span></div>
-    <div class="skills-details">
+      </ul>
 
-      <div class="text">
-        <div class="topic">Skills Reflect My Knowledge</div>
-        <p>
-          Good foundation in backend development, databases, and web technologies.
-          Experience in Java-based applications and modern web development tools.
-        </p>
-        <div class="experience">
-          <div class="num">0</div>
-          <div class="exp">Year<br>Experience</div>
-        </div>
-      </div>
 
-      <div class="boxes">
-        <div class="box"><div class="topic">Java</div><div class="per">70%</div></div>
-        <div class="box"><div class="topic">SQL</div><div class="per">80%</div></div>
-        <div class="box"><div class="topic">JavaScript</div><div class="per">70%</div></div>
-        <div class="box"><div class="topic">React.js</div><div class="per">60%</div></div>
+      <!-- Social Icons -->
+      <div class="nav-actions">
+
+        <a
+          href="https://github.com/Peermd5522"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/peermohammed5522-219105318/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
       </div>
 
     </div>
-  </div>
-</section>
 
-<!-- Services -->
-<section class="services" id="services">
-  <div class="content">
-    <div class="title"><span>My Services</span></div>
 
-    <div class="boxes">
-      <div class="box">
-        <div class="icon"><i class="fas fa-server"></i></div>
-        <div class="topic">Java Backend Development</div>
-        <p>Secure and scalable backend systems using Java, JDBC, and SQL.</p>
-      </div>
-
-      <div class="box">
-        <div class="icon"><i class="fas fa-code"></i></div>
-        <div class="topic">Web Development</div>
-        <p>Responsive websites using HTML, CSS, JavaScript, and React.</p>
-      </div>
-
-      <div class="box">
-        <div class="icon"><i class="fas fa-database"></i></div>
-        <div class="topic">Database Management</div>
-        <p>MySQL database design, queries, and optimization.</p>
-      </div>
-
-      <div class="box">
-        <div class="icon"><i class="fas fa-link"></i></div>
-        <div class="topic">REST API Development</div>
-        <p>Designing RESTful APIs using Node.js and backend concepts.</p>
-      </div>
+    <!-- Mobile Menu Button -->
+    <div
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="Open navigation menu"
+    >
+      <i class="fa-solid fa-bars"></i>
     </div>
-  </div>
-</section>
 
-<!-- Contact -->
-<section class="contact" id="contact">
-  <div class="content">
-    <div class="title"><span>Contact Me</span></div>
-    <div class="text">
-      <div class="topic">Have an Opportunity?</div>
-      <p>
-        Interested in backend or web development roles.
-        Let’s connect and build impactful software solutions together.
+  </nav>
+
+
+  <!-- ============================= -->
+  <!-- HERO -->
+  <!-- ============================= -->
+
+  <section class="hero" id="home">
+
+    <!-- Full-screen background image -->
+    <div class="hero-background">
+      <img
+        src="me.png"
+        alt="Portrait of Peer Mohammed A"
+      />
+    </div>
+
+
+    <!-- Image overlay -->
+    <div class="hero-overlay"></div>
+
+
+    <!-- Hero content -->
+    <div class="hero-content">
+
+      <p class="eyebrow-code">
+        peer-mohammed-a.dev
       </p>
-      <div class="button">
-        <button>Let's Connect</button>
+
+
+      <!-- Terminal -->
+      <div class="terminal" aria-label="Developer introduction">
+
+        <div class="terminal-bar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="terminal-body">
+
+          <p class="line l1">
+            <span class="prompt">$</span>
+            <span class="typed" id="typeLine1"></span>
+            <span class="cursor" id="cursor1">|</span>
+          </p>
+
+          <p class="line l2">
+            <span class="prompt">$</span>
+            <span class="typed" id="typeLine2"></span>
+            <span class="cursor hidden" id="cursor2">|</span>
+          </p>
+
+        </div>
+
       </div>
+
+
+      <h1>
+        Peer Mohammed A
+      </h1>
+
+
+      <p class="role">
+        Software Developer, backend-leaning
+      </p>
+
+
+      <p class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        Tenkasi, Tamil Nadu, India
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a
+          class="btn btn-primary"
+          href="Peer_Mohammed_A_Resume.pdf"
+          download
+        >
+          <i class="fa-solid fa-download"></i>
+          Download Resume
+        </a>
+
+        <a
+          class="btn btn-ghost"
+          href="#projects"
+        >
+          View Projects
+        </a>
+
+      </div>
+
     </div>
-  </div>
-</section>
 
-<!-- Footer -->
-<footer>
-  <div class="text">
-    <span>Created By <a href="#">Peer Mohammed A</a> | © 2025</span>
-  </div>
-</footer>
 
-<script src="script.js"></script>
+    <!-- Scroll indicator -->
+    <a
+      href="#about"
+      class="scroll-indicator"
+      aria-label="Scroll to About"
+    >
+      <span>Scroll</span>
+      <i class="fa-solid fa-arrow-down"></i>
+    </a>
+
+  </section>
+
+
+  <!-- ============================= -->
+  <!-- ABOUT -->
+  <!-- ============================= -->
+
+  <section class="about" id="about">
+
+    <div class="content">
+
+      <p class="kicker">
+        01 — About
+      </p>
+
+      <div class="about-grid">
+
+        <div class="about-copy">
+
+          <h2>
+            I build systems that hold together under real use, not just in the demo.
+          </h2>
+
+          <p>
+            I'm a Computer Science graduate with strong fundamentals in Java,
+            Object-Oriented Programming, JDBC, and SQL. I've spent my time so far
+            building console applications, database-backed systems, and web
+            interfaces with React — and I care most about the backend logic that
+            makes an app actually work: clean CRUD flows, sensible data models,
+            and APIs that don't surprise anyone.
+          </p>
+
+          <p>
+            Right now I'm looking for an entry-level Software Developer role where
+            I can keep growing toward backend engineering.
+          </p>
+
+        </div>
+
+
+        <div class="about-facts">
+
+          <div class="fact">
+
+            <span class="fact-num">
+              7.7
+            </span>
+
+            <span class="fact-label">
+              CGPA, B.E. Computer<br />
+              Science & Engineering
+            </span>
+
+          </div>
+
+
+          <div class="fact">
+
+            <span class="fact-num">
+              4
+            </span>
+
+            <span class="fact-label">
+              Projects shipped<br />
+              end-to-end
+            </span>
+
+          </div>
+
+
+          <div class="fact">
+
+            <span class="fact-num">
+              1
+            </span>
+
+            <span class="fact-label">
+              Web development<br />
+              internship
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============================= -->
+  <!-- EXPERIENCE -->
+  <!-- ============================= -->
+
+  <section class="experience" id="experience">
+
+    <div class="content">
+
+      <p class="kicker">
+        02 — Experience
+      </p>
+
+      <h2 class="section-title">
+        Where I've worked and studied
+      </h2>
+
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-body">
+
+            <span class="timeline-date">
+              Internship
+            </span>
+
+            <h3>
+              Web Development Intern · Kaashiv Infotech
+            </h3>
+
+            <p>
+              Developed responsive web interfaces using HTML, CSS, JavaScript,
+              and React.js. Assisted with UI implementation, debugging, and
+              feature enhancements alongside the team.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-body">
+
+            <span class="timeline-date">
+              2021 – 2025
+            </span>
+
+            <h3>
+              B.E. Computer Science & Engineering · SCAD College of Engineering and Technology
+            </h3>
+
+            <p>
+              CGPA 7.7 / 10. Focused on data structures & algorithms,
+              OOP, and database systems.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-body">
+
+            <span class="timeline-date">
+              2020 – 2021
+            </span>
+
+            <h3>
+              Higher Secondary · Good Shepherd Matric Hr. Sec. School
+            </h3>
+
+            <p>
+              Mathematics & Biology stream — 88%.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="certs">
+
+        <span class="cert-tag">
+          <i class="fa-solid fa-certificate"></i>
+          Java Programming — Udemy
+        </span>
+
+        <span class="cert-tag">
+          <i class="fa-solid fa-certificate"></i>
+          Web Development — Kaashiv Infotech
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============================= -->
+  <!-- SKILLS -->
+  <!-- ============================= -->
+
+  <section class="skills" id="skills">
+
+    <div class="content">
+
+      <p class="kicker light">
+        03 — Skills
+      </p>
+
+      <h2 class="section-title light">
+        What I work with
+      </h2>
+
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+
+          <h3>
+            Languages
+          </h3>
+
+          <div class="bar-row">
+            <span>Java</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="75"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <span>SQL</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="80"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <span>JavaScript (ES6+)</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="72"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <span>Python (Basics)</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="45"></div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="skill-group">
+
+          <h3>
+            Backend & Data
+          </h3>
+
+          <div class="bar-row">
+            <span>JDBC / REST APIs</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="70"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <span>MySQL / MongoDB</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="75"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <span>OOP & Collections</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="78"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <span>React.js</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="65"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="chip-row">
+
+        <span class="chip">Git & GitHub</span>
+        <span class="chip">VS Code</span>
+        <span class="chip">Eclipse</span>
+        <span class="chip">MySQL Workbench</span>
+        <span class="chip">Exception Handling</span>
+        <span class="chip">DBMS</span>
+        <span class="chip">Async / Await</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============================= -->
+  <!-- PROJECTS -->
+  <!-- ============================= -->
+
+  <section class="projects" id="projects">
+
+    <div class="content">
+
+      <p class="kicker">
+        04 — Projects
+      </p>
+
+      <h2 class="section-title">
+        Things I've built
+      </h2>
+
+
+      <div class="project-grid">
+
+
+        <!-- Bank -->
+        <article class="project-card">
+
+          <div class="project-top">
+
+            <i class="fa-solid fa-piggy-bank"></i>
+
+            <a
+              href="https://github.com/Peermd5522"
+              target="_blank"
+              rel="noopener"
+              aria-label="View code on GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+          </div>
+
+          <h3>
+            Bank Management System
+          </h3>
+
+          <p>
+            Java banking application with account creation, deposits,
+            withdrawals, and balance inquiries. Structured with encapsulation,
+            inheritance, and polymorphism.
+          </p>
+
+          <div class="tag-row">
+            <span class="tag">Java</span>
+            <span class="tag">OOP</span>
+            <span class="tag">HashMap</span>
+            <span class="tag">Exception Handling</span>
+          </div>
+
+        </article>
+
+
+        <!-- Student -->
+        <article class="project-card">
+
+          <div class="project-top">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <a
+              href="https://github.com/Peermd5522"
+              target="_blank"
+              rel="noopener"
+              aria-label="View code on GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+          </div>
+
+          <h3>
+            Student Management System
+          </h3>
+
+          <p>
+            Console-based Java application built with a service-layer
+            architecture, JDBC, and MySQL. Handles full CRUD on student
+            records with structured SQL queries.
+          </p>
+
+          <div class="tag-row">
+            <span class="tag">Java</span>
+            <span class="tag">JDBC</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">CRUD</span>
+          </div>
+
+        </article>
+
+
+        <!-- E-Commerce -->
+        <article class="project-card">
+
+          <div class="project-top">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <a
+              href="https://github.com/Peermd5522"
+              target="_blank"
+              rel="noopener"
+              aria-label="View code on GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+          </div>
+
+          <h3>
+            E-Commerce Website
+          </h3>
+
+          <p>
+            Responsive React storefront with product search, category filtering,
+            and a shopping cart. State managed with Props, useState and
+            useEffect; data via the Fetch API.
+          </p>
+
+          <div class="tag-row">
+            <span class="tag">React.js</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">REST API</span>
+            <span class="tag">CSS3</span>
+          </div>
+
+        </article>
+
+
+        <!-- Portfolio -->
+        <article class="project-card">
+
+          <div class="project-top">
+
+            <i class="fa-solid fa-user"></i>
+
+            <a
+              href="https://github.com/Peermd5522"
+              target="_blank"
+              rel="noopener"
+              aria-label="View code on GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+          </div>
+
+          <h3>
+            Portfolio Website
+          </h3>
+
+          <p>
+            This site — a responsive portfolio built with HTML, CSS, and
+            JavaScript to showcase projects, education, and technical skills.
+          </p>
+
+          <div class="tag-row">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <p class="project-note">
+        GitHub links point to my profile — swap in individual repo URLs once each project has its own.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============================= -->
+  <!-- SERVICES -->
+  <!-- ============================= -->
+
+  <section class="services" id="services">
+
+    <div class="content">
+
+      <p class="kicker light">
+        05 — Services
+      </p>
+
+      <h2 class="section-title light">
+        How I can help
+      </h2>
+
+
+      <div class="service-grid">
+
+
+        <div class="service-box">
+
+          <i class="fa-solid fa-server"></i>
+
+          <h3>
+            Java Backend Development
+          </h3>
+
+          <p>
+            Structured, testable backend logic using Java, JDBC, and SQL.
+          </p>
+
+        </div>
+
+
+        <div class="service-box">
+
+          <i class="fa-solid fa-code"></i>
+
+          <h3>
+            Web Development
+          </h3>
+
+          <p>
+            Responsive interfaces with HTML, CSS, JavaScript, and React.
+          </p>
+
+        </div>
+
+
+        <div class="service-box">
+
+          <i class="fa-solid fa-database"></i>
+
+          <h3>
+            Database Management
+          </h3>
+
+          <p>
+            MySQL schema design, queries, and everyday optimization.
+          </p>
+
+        </div>
+
+
+        <div class="service-box">
+
+          <i class="fa-solid fa-link"></i>
+
+          <h3>
+            REST API Development
+          </h3>
+
+          <p>
+            Designing and consuming RESTful APIs for real applications.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============================= -->
+  <!-- CONTACT -->
+  <!-- ============================= -->
+
+  <section class="contact" id="contact">
+
+    <div class="content">
+
+      <p class="kicker">
+        06 — Contact
+      </p>
+
+      <h2 class="section-title">
+        Have an opportunity?
+      </h2>
+
+      <p class="contact-sub">
+        I'm interested in backend or web development roles — let's talk about
+        what you're building.
+      </p>
+
+
+      <div class="contact-grid">
+
+        <a
+          class="contact-card"
+          href="mailto:peermohammeda.13@gmail.com"
+        >
+          <i class="fa-solid fa-envelope"></i>
+          <span>peermohammeda.13@gmail.com</span>
+        </a>
+
+
+        <a
+          class="contact-card"
+          href="tel:+918807130503"
+        >
+          <i class="fa-solid fa-phone"></i>
+          <span>+91 88071 30503</span>
+        </a>
+
+
+        <a
+          class="contact-card"
+          href="https://www.linkedin.com/in/peermohammed5522-219105318/"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+
+
+        <a
+          class="contact-card"
+          href="https://github.com/Peermd5522"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ============================= -->
+  <!-- FOOTER -->
+  <!-- ============================= -->
+
+  <footer>
+
+    <div class="text">
+      <span>
+        Built by Peer Mohammed A · © 2026
+      </span>
+    </div>
+
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>
