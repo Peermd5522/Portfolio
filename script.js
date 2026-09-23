@@ -1,15 +1,14 @@
 /* ============================================
-   REDUCED MOTION
-   ============================================ */
+REDUCED MOTION
+============================================ */
 
 const reduceMotion = window.matchMedia(
-  "(prefers-reduced-motion: reduce)"
+"(prefers-reduced-motion: reduce)"
 ).matches;
 
-
 /* ============================================
-   ELEMENTS
-   ============================================ */
+ELEMENTS
+============================================ */
 
 const menu = document.getElementById("menu");
 const menuBtn = document.getElementById("menuBtn");
@@ -20,343 +19,357 @@ const body = document.body;
 const themeToggle = document.getElementById("themeToggle");
 const themeIcon = document.getElementById("themeIcon");
 
-
 /* ============================================
-   THEME
-   ============================================ */
+THEME
+============================================ */
 
 function applyTheme(theme) {
 
-  if (theme === "dark") {
+if (theme === "dark") {
 
-    body.classList.add("dark-theme");
+body.classList.add("dark-theme");
 
-    themeIcon.classList.remove("fa-moon");
-    themeIcon.classList.add("fa-sun");
+themeIcon.classList.remove("fa-moon");
+themeIcon.classList.add("fa-sun");
 
-    themeToggle.setAttribute(
-      "aria-label",
-      "Switch to light mode"
-    );
+themeToggle.setAttribute(
+  "aria-label",
+  "Switch to light mode"
+);
 
-    themeToggle.setAttribute(
-      "title",
-      "Switch to light mode"
-    );
+themeToggle.setAttribute(
+  "title",
+  "Switch to light mode"
+);
 
-  } else {
+} else {
 
-    body.classList.remove("dark-theme");
+body.classList.remove("dark-theme");
 
-    themeIcon.classList.remove("fa-sun");
-    themeIcon.classList.add("fa-moon");
+themeIcon.classList.remove("fa-sun");
+themeIcon.classList.add("fa-moon");
 
-    themeToggle.setAttribute(
-      "aria-label",
-      "Switch to dark mode"
-    );
+themeToggle.setAttribute(
+  "aria-label",
+  "Switch to dark mode"
+);
 
-    themeToggle.setAttribute(
-      "title",
-      "Switch to dark mode"
-    );
-  }
+themeToggle.setAttribute(
+  "title",
+  "Switch to dark mode"
+);
+
+}
 }
 
-
 /*
-   Check saved theme.
-   Light mode is the default.
+Check saved theme.
+Light mode is the default.
 */
 
 const savedTheme = localStorage.getItem("portfolio-theme");
 
 if (savedTheme === "dark") {
-  applyTheme("dark");
+applyTheme("dark");
 } else {
-  applyTheme("light");
+applyTheme("light");
 }
 
-
 /*
-   Toggle theme.
+Toggle theme.
 */
 
 themeToggle.addEventListener("click", () => {
 
-  const isDark = body.classList.contains("dark-theme");
+const isDark = body.classList.contains("dark-theme");
 
-  if (isDark) {
+if (isDark) {
 
-    applyTheme("light");
+applyTheme("light");
 
-    localStorage.setItem(
-      "portfolio-theme",
-      "light"
-    );
+localStorage.setItem(
+  "portfolio-theme",
+  "light"
+);
 
-  } else {
+} else {
 
-    applyTheme("dark");
+applyTheme("dark");
 
-    localStorage.setItem(
-      "portfolio-theme",
-      "dark"
-    );
-  }
+localStorage.setItem(
+  "portfolio-theme",
+  "dark"
+);
+
+}
 
 });
 
-
 /* ============================================
-   MOBILE MENU
-   ============================================ */
+MOBILE MENU
+============================================ */
 
 function openMenu() {
 
-  menu.classList.add("active");
+menu.classList.add("active");
 
-  body.style.overflow = "hidden";
+body.style.overflow = "hidden";
 }
-
 
 function closeMenu() {
 
-  menu.classList.remove("active");
+menu.classList.remove("active");
 
-  body.style.overflow = "";
+body.style.overflow = "";
 }
 
-
 menuBtn.addEventListener(
-  "click",
-  openMenu
+"click",
+openMenu
 );
-
 
 cancelBtn.addEventListener(
-  "click",
-  closeMenu
+"click",
+closeMenu
 );
-
 
 document.querySelectorAll(".menu a").forEach((link) => {
 
-  link.addEventListener(
-    "click",
-    closeMenu
-  );
+link.addEventListener(
+"click",
+closeMenu
+);
 
 });
 
-
 /* ============================================
-   HERO TERMINAL TYPING
-   ============================================ */
+HERO TERMINAL TYPING
+============================================ */
 
 function typeText(
-  element,
-  text,
-  speed,
-  onDone
+element,
+text,
+speed,
+onDone
 ) {
 
-  if (reduceMotion) {
+if (reduceMotion) {
 
-    element.textContent = text;
+element.textContent = text;
 
-    if (onDone) {
-      onDone();
-    }
+if (onDone) {
+  onDone();
+}
 
-    return;
-  }
-
-
-  let i = 0;
-
-
-  const timer = setInterval(() => {
-
-    element.textContent =
-      text.slice(0, i + 1);
-
-    i++;
-
-
-    if (i >= text.length) {
-
-      clearInterval(timer);
-
-      if (onDone) {
-        onDone();
-      }
-
-    }
-
-  }, speed);
+return;
 
 }
 
+let i = 0;
+
+const timer = setInterval(() => {
+
+element.textContent =
+  text.slice(0, i + 1);
+
+i++;
+
+
+if (i >= text.length) {
+
+  clearInterval(timer);
+
+  if (onDone) {
+    onDone();
+  }
+
+}
+
+}, speed);
+
+}
 
 /* ============================================
-   DOM LOADED
-   ============================================ */
+DOM LOADED
+============================================ */
 
 window.addEventListener(
-  "DOMContentLoaded",
+"DOMContentLoaded",
+() => {
+
+const line1 =
+  document.getElementById("typeLine1");
+
+const line2 =
+  document.getElementById("typeLine2");
+
+const cursor1 =
+  document.getElementById("cursor1");
+
+const cursor2 =
+  document.getElementById("cursor2");
+
+
+typeText(
+  line1,
+  "whoami",
+  90,
   () => {
 
-    const line1 =
-      document.getElementById("typeLine1");
-
-    const line2 =
-      document.getElementById("typeLine2");
-
-    const cursor1 =
-      document.getElementById("cursor1");
-
-    const cursor2 =
-      document.getElementById("cursor2");
-
-
-    typeText(
-      line1,
-      "whoami",
-      90,
-      () => {
-
-        cursor1.classList.add(
-          "hidden"
-        );
-
-
-        setTimeout(() => {
-
-          cursor2.classList.remove(
-            "hidden"
-          );
-
-
-          typeText(
-            line2,
-            "Peer Mohammed A — Software Developer",
-            35
-          );
-
-        }, 250);
-
-      }
+    cursor1.classList.add(
+      "hidden"
     );
+
+
+    setTimeout(() => {
+
+      cursor2.classList.remove(
+        "hidden"
+      );
+
+
+      typeText(
+        line2,
+        "Peer Mohammed A — Software Developer",
+        35
+      );
+
+    }, 250);
 
   }
 );
 
+}
+);
 
 /* ============================================
-   SKILL BAR ANIMATION
-   ============================================ */
+SKILL BAR ANIMATION
+============================================ */
 
 const bars =
-  document.querySelectorAll(".bar-fill");
-
+document.querySelectorAll(".bar-fill");
 
 const barObserver =
-  new IntersectionObserver(
+new IntersectionObserver(
 
-    (entries, observer) => {
+(entries, observer) => {
 
-      entries.forEach((entry) => {
+  entries.forEach((entry) => {
 
-        if (entry.isIntersecting) {
+    if (entry.isIntersecting) {
 
-          const element =
-            entry.target;
-
-
-          element.style.width =
-            element.dataset.percent + "%";
+      const element =
+        entry.target;
 
 
-          observer.unobserve(
-            element
-          );
+      element.style.width =
+        element.dataset.percent + "%";
 
-        }
 
-      });
+      observer.unobserve(
+        element
+      );
 
-    },
-
-    {
-      threshold: 0.4
     }
 
-  );
+  });
 
+},
+
+{
+  threshold: 0.4
+}
+
+);
 
 bars.forEach((bar) => {
 
-  barObserver.observe(bar);
+barObserver.observe(bar);
+
+});
+
+/* ============================================
+PROJECT CARD REVEAL
+============================================ */
+
+const cards =
+document.querySelectorAll(
+".project-card"
+);
+
+const cardObserver =
+new IntersectionObserver(
+
+(entries, observer) => {
+
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+
+      const delay =
+        reduceMotion
+          ? 0
+          : Array.from(cards).indexOf(
+              entry.target
+            ) * 90;
+
+
+      setTimeout(() => {
+
+        entry.target.classList.add(
+          "in-view"
+        );
+
+      }, delay);
+
+
+      observer.unobserve(
+        entry.target
+      );
+
+    }
+
+  });
+
+},
+
+{
+  threshold: 0.15
+}
+
+);
+
+cards.forEach((card) => {
+
+cardObserver.observe(card);
 
 });
 
 
+
 /* ============================================
-   PROJECT CARD REVEAL
+   SECTION SCROLL REVEAL
    ============================================ */
 
-const cards =
-  document.querySelectorAll(
-    ".project-card"
-  );
+const revealSections = document.querySelectorAll("section");
 
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal-section");
+        entry.target.classList.add("visible");
 
-const cardObserver =
-  new IntersectionObserver(
+        sectionObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.12
+  }
+);
 
-    (entries, observer) => {
-
-      entries.forEach((entry) => {
-
-        if (entry.isIntersecting) {
-
-          const delay =
-            reduceMotion
-              ? 0
-              : Array.from(cards).indexOf(
-                  entry.target
-                ) * 90;
-
-
-          setTimeout(() => {
-
-            entry.target.classList.add(
-              "in-view"
-            );
-
-          }, delay);
-
-
-          observer.unobserve(
-            entry.target
-          );
-
-        }
-
-      });
-
-    },
-
-    {
-      threshold: 0.15
-    }
-
-  );
-
-
-cards.forEach((card) => {
-
-  cardObserver.observe(card);
-
+revealSections.forEach((section) => {
+  section.classList.add("reveal-section");
+  sectionObserver.observe(section);
 });
