@@ -32,6 +32,11 @@
 
 <body>
 
+  <!-- Animated background -->
+  <div class="aurora" aria-hidden="true">
+    <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><span class="orb o4"></span>
+  </div>
+
   <!-- Theme Toggle -->
   <button
     class="theme-toggle"
@@ -54,16 +59,13 @@
        href="#about" 
        aria-label="About Peer Mohammed A" 
        title="About me" > 
-       <i class="fa-solid fa-user"></i> 
+       <img src="avatar.jpg" alt="" width="44" height="44" />
     </a>
 
 
       <!-- Navigation Links -->
       <ul class="menu" id="menu">
-
-        <li>
-          <a href="#about">About</a>
-        </li>
+        <span class="nav-pill" aria-hidden="true"></span>
 
         <li>
           <a href="#experience">Experience</a>
@@ -132,26 +134,12 @@
 
   <section class="hero" id="home">
 
-    <!-- Full-screen background image -->
-    <div class="hero-background">
-      <img
-        src="me.png"
-        alt="Portrait of Peer Mohammed A"
-      />
-    </div>
-
-
-    <!-- Image overlay -->
-    <div class="hero-overlay"></div>
-
+    <canvas class="hero-net" id="heroNet" aria-hidden="true"></canvas>
 
     <!-- Hero content -->
     <div class="hero-content">
 
-      <!-- <p class="eyebrow-code">
-        peer-mohammed-a.dev
-      </p> -->
-
+      
 
       <!-- Terminal -->
       <div class="terminal" aria-label="Developer introduction">
@@ -254,17 +242,21 @@
           </h2>
 
           <p>
-            I'm a Computer Science graduate with strong fundamentals in Java,
-            Object-Oriented Programming, JDBC, and SQL. I've spent my time so far
-            building console applications, database-backed systems, and web
-            interfaces with React — and I care most about the backend logic that
-            makes an app actually work: clean CRUD flows, sensible data models,
-            and APIs that don't surprise anyone.
+            I'm a Computer Science graduate focused on Java and backend development, with hands-on experience in Object-Oriented Programming, SQL, JDBC, REST APIs, and Spring Boot. I've built database-backed applications, Java systems, and web interfaces with React, working across both backend logic and frontend functionality.
+
+          </h4>
+
+          
+          <p>
+            I enjoy understanding how the pieces fit together — from designing clean application logic and 
+            CRUD operations to connecting applications with databases and
+            building APIs that support real workflows.
           </p>
 
           <p>
-            Right now I'm looking for an entry-level Software Developer role where
-            I can keep growing toward backend engineering.
+            I'm currently looking for an entry-level Software Developer role 
+            where I can apply my fundamentals, contribute to real-world products, and 
+            continue growing as a backend-focused developer.
           </p>
 
         </div>
@@ -381,8 +373,7 @@
             </h3>
 
             <p>
-              CGPA 7.7 / 10. Focused on data structures & algorithms,
-              OOP, and database systems.
+              CGPA 7.7 / 10.
             </p>
 
           </div>
@@ -466,6 +457,14 @@
             </div>
           </div>
 
+
+          <div class="bar-row">
+            <span>Python (Basics)</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="45"></div>
+            </div>
+          </div>
+
           <div class="bar-row">
             <span>SQL</span>
             <div class="bar">
@@ -480,12 +479,6 @@
             </div>
           </div>
 
-          <div class="bar-row">
-            <span>Python (Basics)</span>
-            <div class="bar">
-              <div class="bar-fill" data-percent="45"></div>
-            </div>
-          </div>
 
         </div>
 
@@ -496,10 +489,26 @@
             Backend & Data
           </h3>
 
+
           <div class="bar-row">
-            <span>JDBC / REST APIs</span>
+            <span>OOP & Collections</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="78"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <span>React.js / REST APIs</span>
             <div class="bar">
               <div class="bar-fill" data-percent="70"></div>
+            </div>
+          </div>
+
+
+          <div class="bar-row">
+            <span>Spring boot</span>
+            <div class="bar">
+              <div class="bar-fill" data-percent="60"></div>
             </div>
           </div>
 
@@ -510,19 +519,6 @@
             </div>
           </div>
 
-          <div class="bar-row">
-            <span>OOP & Collections</span>
-            <div class="bar">
-              <div class="bar-fill" data-percent="78"></div>
-            </div>
-          </div>
-
-          <div class="bar-row">
-            <span>React.js</span>
-            <div class="bar">
-              <div class="bar-fill" data-percent="65"></div>
-            </div>
-          </div>
 
         </div>
 
